@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>DS Groups</title>
+    <!-- Before first paint: enable motion styles and apply the saved theme, so there is no flash -->
+    <script>
+      document.documentElement.classList.add('js');
+      try { if (localStorage.getItem('dsg-theme') === 'light') document.documentElement.setAttribute('data-theme', 'light'); } catch (e) {}
+    </script>
+    <meta name="description" content="DS Groups is a family-founded franchise group in Kent, operating Domino’s Pizza, German Doner Kebab (GDK) and Snap Fitness. Founded in 2001 by the Dhillon family." />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#0b0c0d" />
+    <meta property="og:title" content="DS Groups | Family-founded franchise group: Domino’s, GDK and Snap Fitness" />
+    <meta property="og:description" content="DS Groups is a family-founded franchise group in Kent, operating Domino’s Pizza, German Doner Kebab (GDK) and Snap Fitness. Founded in 2001 by the Dhillon family." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/img/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Two members of the DS Groups leadership team in conversation" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/assets/img/ds-monogram.png" />
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto+Slab:wght@300;400&display=swap" />
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "DS Groups", "url": "https://dsgroups.co.uk/", "foundingDate": "2001", "email": "info@dsgroups.co.uk", "telephone": "+44 1474 569 788", "address": {"@type": "PostalAddress", "streetAddress": "Unit B, Endeavour Park, London Road, Addington", "addressLocality": "West Malling", "addressRegion": "Kent", "postalCode": "ME19 5SH", "addressCountry": "GB"}, "description": "Family-founded franchise group operating Domino’s Pizza, German Doner Kebab and Snap Fitness."}</script>
+  </head>
+  <body class="has-hero">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

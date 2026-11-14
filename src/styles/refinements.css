@@ -1,0 +1,21 @@
+/* Refinements layered on the original design system (style.css, cinema.css stay untouched).
+   See "Typography" and "Cinematic motion" in README.md. */
+
+/* ---------- Typography: two families, a fixed set of faces ----------
+   Display  Roboto Slab   300 headings, statements, figures   400 small display text (h3, names, facts)
+   Text     Poppins       400 body   500 labels, buttons, captions   600 brand mark, bold emphasis
+   Only these faces are loaded from Google Fonts. Anything else would be faked by the browser
+   (a smeared "synthetic" bold or slanted italic), so it is switched off and mapped to a real face. */
+html { font-synthesis: none; }
+strong, b { font-weight: 600; }
+
+/* Form controls don't inherit fonts by default and fall back to the OS font (Arial on Windows) */
+button, input, textarea, select { font-family: inherit; }
+
+/* Statements come in two sizes only. Before, each page set its own size inline (37 to 60px).
+   .big-say            full-width statement (home opening)
+   .big-say.say-quote  quotes and statements inside a column */
+.big-say.say-quote { font-size: clamp(1.6rem, 3.2vw, 2.9rem); line-height: 1.22; }
+
+/* ---------- Concept disclaimer in the footer ---------- */
+.concept-note { margin: 18px 0 0; font-size: .8125rem; line-height: 1.5; color: #9aa3ac; max-width: 72ch; }
