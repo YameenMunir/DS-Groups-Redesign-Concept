@@ -43,7 +43,6 @@ export default function Footer() {
             </ul>
           </nav>
         </div>
-        <div className="foot-word" aria-hidden="true">DS Groups</div>
         <div className="legal">
           <a className="to-top" href="#content">Back to top</a>
           <span>DS Groups © 2026. All rights reserved.</span>

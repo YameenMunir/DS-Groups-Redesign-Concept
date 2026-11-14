@@ -184,8 +184,6 @@
 .story-col p { max-width: none; }
 
 /* ---------- Footer wordmark: fills with gold on hover ---------- */
-.foot-word { background: linear-gradient(90deg, var(--gold) 0 50%, transparent 50% 100%); background-size: 200% 100%; background-position: 100% 0; -webkit-background-clip: text; background-clip: text; transition: background-position 1.2s var(--ease-out); }
-.foot-word:hover { background-position: 0 0; }
 .to-top { display: inline-flex; align-items: center; gap: 10px; font-size: .8125rem; color: #9aa3ac; text-decoration: none; }
 
 /* ---------- Magnetic targets ---------- */
