@@ -122,10 +122,21 @@ export function BrandScenes({ copy = 'tagline' }) {
 
 /* Brand names running across the screen; speed follows scroll velocity (see lib/motion) */
 export function Marquee() {
-  const names = ['Domino’s Pizza', 'German Doner Kebab', 'Snap Fitness'];
+  const items = ['dominos', 'gdk', 'snap'].map((id) => brands.find((b) => b.id === id));
   return (
     <div className="mega" aria-hidden="true">
-      <div className="run">{Array.from({ length: 12 }, (_, i) => <span key={i}>{names[i % 3]}</span>)}</div>
+      <div className="run">
+        {Array.from({ length: 12 }, (_, i) => {
+          const b = items[i % 3];
+          /* width/height reserve the logo's space so the loop width is right before the image loads */
+          return (
+            <span key={i}>
+              <img src={b.logo.src} width={b.logo.w} height={b.logo.h} alt="" decoding="async" />
+              {b.id === 'dominos' ? 'Domino’s Pizza' : b.name}
+            </span>
+          );
+        })}
+      </div>
     </div>
   );
 }

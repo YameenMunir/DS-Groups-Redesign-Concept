@@ -113,7 +113,8 @@
 /* ---------- Velocity marquee ---------- */
 .mega { overflow: hidden; padding-block: clamp(28px, 4vw, 56px); border-block: 1px solid var(--line); background: var(--bg); }
 .mega .run { display: flex; width: max-content; will-change: transform; }
-.mega span { font: 300 clamp(3.5rem, 10vw, 9rem)/1 var(--display); letter-spacing: -.04em; white-space: nowrap; padding-right: .5em; color: transparent; -webkit-text-stroke: 1px var(--line-strong); }
+.mega span { display: inline-flex; align-items: center; gap: .4em; font: 300 clamp(2.25rem, 5.5vw, 5rem)/1 var(--display); letter-spacing: -.04em; white-space: nowrap; padding-right: .9em; color: transparent; -webkit-text-stroke: 1px var(--line-strong); }
+.mega span img { height: .62em; width: auto; flex: none; }
 .mega span:nth-child(3n+2) { color: var(--gold-text); -webkit-text-stroke: 0; }
 
 /* ---------- Insights with cursor preview ---------- */
