@@ -113,9 +113,9 @@
 /* ---------- Velocity marquee ---------- */
 .mega { overflow: hidden; padding-block: clamp(28px, 4vw, 56px); border-block: 1px solid var(--line); background: var(--bg); }
 .mega .run { display: flex; width: max-content; will-change: transform; }
-.mega span { display: inline-flex; align-items: center; gap: .4em; font: 300 clamp(2.25rem, 5.5vw, 5rem)/1 var(--display); letter-spacing: -.04em; white-space: nowrap; padding-right: .9em; color: transparent; -webkit-text-stroke: 1px var(--line-strong); }
+/* Same type as the h1/h2 headings: Roboto Slab 300, -0.015em tracking, h1 size scale */
+.mega span { display: inline-flex; align-items: center; gap: .4em; font: 300 clamp(2.5rem, 5.6vw, 4.75rem)/1.04 var(--display); letter-spacing: -.015em; white-space: nowrap; padding-right: .9em; color: var(--gold-text); }
 .mega span img { height: .62em; width: auto; flex: none; }
-.mega span:nth-child(3n+2) { color: var(--gold-text); -webkit-text-stroke: 0; }
 
 /* ---------- Insights with cursor preview ---------- */
 .peek { position: fixed; left: 0; top: 0; width: 280px; aspect-ratio: 4 / 3; z-index: 30; pointer-events: none; overflow: hidden; opacity: 0; transform: translate3d(-50%, -50%, 0) scale(.85); transition: opacity .35s var(--ease), transform .45s var(--ease-out); display: none; }
