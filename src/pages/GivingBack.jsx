@@ -6,7 +6,7 @@ export default function GivingBack() {
     <>
       <PageMeta title="Giving back | DS Groups" description="DS Groups supports YLF, a Kent youth charity helping care leavers, and a range of national charities." />
       <PageHead
-        className="type-only"
+        image={{ src: '/assets/img/ds-hero-poster.webp', alt: 'DS Groups leadership in conversation at head office', fp: '50% 38%' }}
         title="Gratitude is thankfulness expressed in action"
         current="Giving back"
         lede="William George Jordan"
