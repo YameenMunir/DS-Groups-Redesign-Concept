@@ -108,7 +108,7 @@
 .bscene h3 .blogo { height: calc(clamp(44px, 5vw, 70px) * var(--k, 1)); }
 .bscene p { color: #d0d5da; max-width: 46ch; font-size: clamp(1rem, 1.3vw, 1.2rem); }
 .bscene .copy { opacity: calc((var(--p, 1) - .55) * 2.4); transform: translateY(calc((1 - var(--p, 1)) * 60px)); }
-.bscene .num { position: absolute; right: max(var(--gutter), env(safe-area-inset-right, 0px)); bottom: clamp(40px, 7vh, 80px); font: 300 clamp(4rem, 12vw, 11rem)/.8 var(--display); color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,.28); letter-spacing: -.04em; }
+.bscene .num { position: absolute; right: max(var(--gutter), env(safe-area-inset-right, 0px)); bottom: clamp(40px, 7vh, 80px); font: 300 clamp(4rem, 12vw, 11rem)/.8 var(--display); color: var(--gold); letter-spacing: -.015em; font-variant-numeric: tabular-nums; }
 
 /* ---------- Velocity marquee ---------- */
 .mega { overflow: hidden; padding-block: clamp(28px, 4vw, 56px); border-block: 1px solid var(--line); background: var(--bg); }
