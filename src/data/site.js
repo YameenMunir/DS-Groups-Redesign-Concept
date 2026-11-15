@@ -95,12 +95,3 @@ export const journey = [
     text: 'GDK opens at Bluewater Shopping Centre, one of the country’s most popular shopping destinations.' },
 ];
 
-/* Scenes from the brand film on the home hero */
-export const filmScenes = [
-  { brand: 'DS Groups', cap: 'The leadership team at work', img: 'reel-founders.webp', fp: '71% 32%', alt: 'Two members of the DS Groups leadership in conversation' },
-  { brand: 'Domino’s', cap: 'Fresh pizza, made in store', img: 'reel-pizza.webp', fp: '52% 24%', alt: 'A Domino’s team member holding a fresh pizza in store' },
-  { brand: 'Domino’s', cap: 'Dough stretched by hand on the make line', img: 'reel-dough.webp', fp: '52% 18%', alt: 'A Domino’s pizza maker stretching dough' },
-  { brand: 'German Doner Kebab', cap: 'Served with a smile at the counter', img: 'reel-gdk-counter.webp', fp: '61% 24%', alt: 'A GDK team member serving a customer' },
-  { brand: 'German Doner Kebab', cap: 'Doner sliced fresh to order', img: 'reel-doner.webp', fp: '56% 40%', alt: 'Doner being sliced at a GDK restaurant' },
-  { brand: 'Snap Fitness', cap: 'Training on the gym floor', img: 'reel-gym.webp', fp: '64% 30%', alt: 'A member training at a Snap Fitness gym' },
-];

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import HeroFilm from '../components/HeroFilm';
+import HeroVideo from '../components/HeroVideo';
 import JourneyReel from '../components/JourneyReel';
 import { BrandScenes, Cta, Marquee, PageMeta, Posts } from '../components/Blocks';
 import { fp } from '../lib/style';
@@ -33,9 +33,9 @@ export default function Home() {
     <>
       <PageMeta title="DS Groups Redesign"
         description="DS Groups is a family-founded franchise group in Kent, operating Domino’s Pizza, German Doner Kebab (GDK) and Snap Fitness. Founded in 2001 by the Dhillon family." />
-      <HeroFilm />
+      <HeroVideo />
 
-      <section className="section opening" aria-labelledby="say-h">
+      <section className="section opening" id="about" aria-labelledby="say-h">
         <div className="wrap">
           <div className="grid">
             <div className="say">

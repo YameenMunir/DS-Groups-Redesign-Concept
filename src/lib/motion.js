@@ -69,6 +69,8 @@ function setupScrollLoop(scope, { isHome }) {
   const wordEls = [...scope.querySelectorAll('[data-words]')].map((el) => ({ el, w: el.querySelectorAll('.w'), n: -1 }));
   const par = reduce ? [] : [...scope.querySelectorAll('[data-parallax]')];
   const bar = document.querySelector('.progress');
+  const hero = reduce ? null : scope.querySelector('.vhero');
+  let heroHs = '';
 
   const megas = [...scope.querySelectorAll('.mega .run')].map((el) => ({ el, x: 0, w: 0, vis: true }));
   let mio;
@@ -94,6 +96,9 @@ function setupScrollLoop(scope, { isHome }) {
       const lbNow = Math.max(0, 1 - y / 320) * (lbRest * vh / 100);
       lbs.forEach((l) => { if (!l.classList.contains('cut')) l.style.setProperty('--lb', lbNow.toFixed(1) + 'px'); });
     }
+
+    /* Home hero: content lifts away and the video dims as the page scrolls */
+    if (hero) { const hs = clamp(y / vh, 0, 1).toFixed(3); if (hs !== heroHs) { heroHs = hs; hero.style.setProperty('--hs', hs); } }
 
     if (pinned() && reelExtra > 0) {
       const r = reel.getBoundingClientRect();
